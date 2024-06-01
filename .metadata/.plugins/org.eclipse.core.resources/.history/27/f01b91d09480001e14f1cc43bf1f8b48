@@ -1,0 +1,88 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"     import="com.klef.jfsd.springboot.model.Librarian" %>
+<%@ taglib uri="jakarta.tags.core" prefix="c"%> 
+
+<%
+Librarian lib = (Librarian) session.getAttribute("lib");
+	if(lib==null)
+	{
+		response.sendRedirect("sessionexpiry.html");
+	}
+%>
+ <!DOCTYPE html>
+ <html lang="en" title="Coding design">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Responsive HTML Table With Pure CSS - Web Design/UI Design</title>
+     <link rel="stylesheet" href="css/table.css">
+     <style type="text/css">
+     nav{
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#009688;
+}
+     </style>
+ </head>
+ 
+ <body>
+ <%@ include file="libnavbar.jsp" %>
+ <div class="body">
+     <main class="table">
+         <section class="table__header">
+             <h1>Users</h1>
+             <div class="input-group">
+                 <input type="search" placeholder="Search Data...">
+                 <img src="images/magnifying-glass.jpg" alt="">
+             </div>
+             
+         </section>
+         <section class="table__body">
+             <table>
+                 <thead>
+                     <tr>
+                         <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                         <th> Name <span class="icon-arrow">&UpArrow;</span></th>
+                         <th> Gender <span class="icon-arrow">&UpArrow;</span></th>
+                         <th> Date Of Birth <span class="icon-arrow">&UpArrow;</span></th>
+                         <th> Semister <span class="icon-arrow">&UpArrow;</span></th>
+                         <th> Contact <span class="icon-arrow">&UpArrow;</span></th>
+                         <th> Active Status </th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <c:forEach items="${users}"  var="usr"> 
+						<tr> 
+							<td><c:out value="${usr.id}" /></td> 
+							<td><c:out value="${usr.name}" /></td> 
+							<td><c:out value="${usr.gender}" /></td> 
+							<td><c:out value="${usr.year}" /></td> 
+							<td><c:out value="${usr.semister}" /></td> 
+							<td><c:out value="${usr.contact}" /></td> 
+							<c:if test="${usr.active==true}">
+							<td><a style="text-decoration: none; background-color:red; color: white; padding:5px; border-radius: 10px;" href='<c:url value="setstatus?id=${usr.id}&status=false"></c:url>'>Make Inactive</a></td> 
+							</c:if>
+							<c:if test="${usr.active==false}">
+							<td><a style="text-decoration: none; background-color:green; color: white; padding:5px; border-radius: 10px;" href='<c:url value="setstatus?id=${usr.id}&status=true"></c:url>'>Make Active</a></td> 
+							</c:if>
+						</tr> 
+					</c:forEach> 
+                 </tbody>
+             </table>
+         </section>
+     </main>
+     </div>
+     <div style="display: flex; justify-content: center;">
+     <button style="background-color:#009688; align-items: center;"><a style="text-decoration: none; color: white;" href="addabook">Add a Book</a></button>
+ 	</div>
+ </body>
+ <script src="table.js">
+    </script>
+ </html>

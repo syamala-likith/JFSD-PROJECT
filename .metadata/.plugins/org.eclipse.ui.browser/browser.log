@@ -1,0 +1,32 @@
+
+Oct 09, 2023 07:41:03.705 NEW SESSION
+Oct 09, 2023 07:41:03.705 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Oct 09, 2023 08:45:00.974 [1932:9496:1009/084500.973:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+Oct 09, 2023 08:49:53.45 [1932:15532:1009/084953.044:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+Oct 09, 2023 08:50:15.794 [1932:15532:1009/085015.792:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -118
+
+Oct 14, 2023 14:01:54.195 NEW SESSION
+Oct 14, 2023 14:01:54.195 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Oct 14, 2023 15:18:07.255 [17596:17300:1014/151807.255:ERROR:interface_endpoint_client.cc(702)] Message 0 rejected by interface blink.mojom.WidgetHost
+Oct 14, 2023 15:35:53.583 [17596:17300:1014/153553.583:ERROR:device_event_log_impl.cc(225)] [15:35:53.578] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Oct 14, 2023 15:35:53.590 [17596:17300:1014/153553.590:ERROR:device_event_log_impl.cc(225)] [15:35:53.584] USB: usb_service_win.cc:307 SetupDiEnumDeviceInterfaces: No more data is available. (0x103)
+Oct 14, 2023 15:35:53.606 [17596:17300:1014/153553.605:ERROR:device_event_log_impl.cc(225)] [15:35:53.600] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Oct 14, 2023 16:30:33.526 [17596:17300:1014/163033.526:ERROR:device_event_log_impl.cc(225)] [16:30:33.524] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+Oct 14, 2023 16:30:33.950 [17596:11360:1014/163033.950:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+Oct 14, 2023 17:17:54.682 [17596:17300:1014/171754.682:ERROR:interface_endpoint_client.cc(702)] Message 0 rejected by interface blink.mojom.WidgetHost
+Oct 14, 2023 17:18:06.661 [17596:16496:1014/171806.661:ERROR:cert_verify_proc_builtin.cc(701)] CertVerifyProcBuiltin for global.ib-ibi.com failed:
+Oct 14, 2023 17:18:06.661 ----- Certificate i=0 (CN=*.ib-ibi.com,O=KBM Group LLC,L=Louisville,ST=Colorado,C=US) -----
+Oct 14, 2023 17:18:06.664 ERROR: Time is after notAfter
+Oct 14, 2023 17:18:06.664 
+Oct 14, 2023 17:18:06.664 
+Oct 14, 2023 17:40:23.603 [17596:11360:1014/174023.603:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+Oct 14, 2023 17:40:23.943 [17596:11360:1014/174023.943:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+Oct 14, 2023 17:40:43.492 [17596:17300:1014/174043.492:ERROR:interface_endpoint_client.cc(702)] Message 0 rejected by interface blink.mojom.WidgetHost
+Oct 14, 2023 17:42:15.442 [17596:11360:1014/174215.442:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+Oct 14, 2023 19:17:20.995 [17596:11360:1014/191720.995:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+Oct 14, 2023 19:53:20.841 [17596:11360:1014/195320.841:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+Oct 14, 2023 20:00:41.805 [17596:11360:1014/200041.805:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+
+Nov 03, 2023 15:50:48.850 NEW SESSION
+Nov 03, 2023 15:50:48.850 [15548:22456:1103/155048.850:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+Nov 03, 2023 17:38:40.104 [15548:22456:1103/173840.104:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2

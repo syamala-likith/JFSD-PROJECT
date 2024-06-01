@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.bookview{
+	display: flex;
+	width: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #009688;
+	background:radial-gradient(#fff,#81c7c0);
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding: 30px;
+}
+.singlebook
+{
+	color: white;
+	background-color: white;
+	padding: 10px;
+	border-radius: 20px;
+}
+.singlebookimg{
+	margin-left: 15px;
+	height: 400px;
+	width: 250px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+.para{
+	border-radius: 15px;
+	padding: 5px;
+	text-align: center;
+	background-color: #009688;
+	position: relative;
+	height: 100px;
+}
+.addstudent{
+	background-color: white;
+	height: 270px;
+	padding: 10px;
+	border-radius: 10px;
+	text-align: center;
+	margin-top: 150px;
+}
+.addstudentimg{
+	width: 200px;
+}
+.addbtn{
+	border-radius: 15px;
+	padding: 5px;
+	text-align: center;
+	background-color: #009688;
+	color: white;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+* {
+   box-sizing: border-box;
+}
+
+
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: black;
+}
+
+li 
+{
+  float: left;
+    border-right: 1px solid blue;
+}
+
+li a 
+{
+  display: block;
+  color: white;
+ font-size:18px;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.active
+{
+background-color: black;
+color: white;
+}
+li a:hover {
+  background-color: orange;
+  color: white;
+}
+
+
+.blink {
+  animation: blink 1s steps(1, end) infinite;
+}
+
